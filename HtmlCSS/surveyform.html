@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>surveyform</title>
+    <link rel="stylesheet" href="formstyle.css">
+   
+</head>
+<body>
+        
+        <form name="surveyform">
+            <div class="formcontrol">
+            <label for="fname">FirstName:<input type="text" id="fname" required> </label>
+            <label for="lname">LastName:<input type="text" id="lname" required> </label></div>
+             <div class="formcontrol">
+            <label for="dob">Date of birth:<input type="date" id="dob" required max="2020-12-31"> </label>
+            <label for="country" >Country:<select id="country" required>
+                <option value="India">India</option>
+                <option value="Australia">Australia</option>
+                <option value="srilanka">SriLanka</option>
+                <option value="spain">Spain</option>
+                <option value="brazil">Brazil</option>
+                <option value="china">China</option>
+                <option value="nepal">Nepal</option>
+            </select></label></div>
+             <div class="formcontrol">
+            <label for="gender">Gender:</label>
+                    <label for="male">Male<input type="radio" id="gender" required></label>
+                    <label for="female">Female<input type="radio" id="gender" required></label>
+            <label for="profession">Profession:<input type="text" required></label>
+            <label for="email">Email:<input type="email" required></label>
+            <label for="phone">PhoneNo:<input type="text" pattern="[789][0-9]{9}" max="10" id="phone" onsubmit="validateNumber()" required></label></div>
+            <td>
+            <tr><button type="submit" id="submit">Submit</button></tr>
+            <tr> <button type="reset" id="reset">Reset</button></tr>
+            </td>
+        </form>
+        
+</body>
+</html>

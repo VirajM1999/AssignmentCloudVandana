@@ -1,0 +1,13 @@
+
+const prompt=require("prompt-sync")();
+
+let str=prompt("enter the string=>")
+function reverseWords(words){
+    var reverse='';
+    for (let index = words.length-1; index >=0; index--){
+             reverse+=words[index]
+    }
+    return reverse
+}
+
+console.log(reverseWords(str));

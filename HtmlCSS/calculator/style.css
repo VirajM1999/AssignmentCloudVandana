@@ -1,0 +1,70 @@
+table{
+    background: rgb(233, 236, 237);
+    border:1px solid black;
+    border-radius: 5px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#buttons{
+    width: 100%; 
+    padding: 20px 40px; 
+    background-color: rgb(47, 53, 53); 
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+#clear{
+    width: 200px; 
+    padding: 20px 40px; 
+    background-color:rgb(84, 186, 142) ;
+    
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    display: grid;
+    
+}
+#back{
+    width: 100px;
+    
+    padding: 20px 40px; 
+    background-color:rgb(84, 186, 142) ;
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+
+}
+#operators{
+    width: 100%; 
+    padding: 20px 40px; 
+    background-color: rgb(104, 115, 115); 
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+#result{
+    padding: 20px 40px; 
+    font-size: 24px; 
+    font-weight: bold;
+    border-radius: 5px; 
+    border: 2px solid black; 
+}

@@ -1,0 +1,32 @@
+const prompt=require("prompt-sync")()
+
+let arr=[];
+ let size=prompt("Enter the size=>")
+
+ 
+for(var i=0; i<size; i++) {
+
+	arr[i] = prompt('Enter Element ');
+}
+
+
+function sortdescend(array){
+    let curr=0;
+    
+    for (let i = 1; i < array.length; i++) {
+        curr=array[i]
+        let k=i-1
+        while(curr>array[k] && k>=0){
+            array[k+1]=array[k]
+            k--
+        }
+        array[k+1]=curr
+        
+    }
+
+     
+    console.log("The sorted array is in descending order",...array)
+
+    
+}
+console.log(sortdescend(arr))
